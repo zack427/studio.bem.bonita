@@ -4,13 +4,13 @@ Site institucional desenvolvido para o Studio Bem Bonita, com foco em apresentar
 
 ## Tecnologias
 
-* HTML5
-* CSS3
-* JavaScript
-* Google Fonts
-* Font Awesome
-* Google Maps Embed
-* WhatsApp API
+- HTML5
+- CSS3
+- JavaScript
+- Google Fonts
+- Font Awesome
+- Google Maps Embed
+- Integração com WhatsApp (Click-to-Chat)
 
 ## Recursos do Projeto
 
