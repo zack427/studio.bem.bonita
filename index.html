@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Studio Bem Bonita</title>
+  <meta name="description" content="Studio Bem Bonita: cabelo, unhas, sobrancelhas e estetica em um ambiente acolhedor, moderno e elegante.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header" id="siteHeader">
+    <a class="brand" href="#inicio" aria-label="Studio Bem Bonita">
+      <img src="img/logo.jpg" alt="Studio Bem Bonita">
+      <span>Studio <strong>Bem Bonita</strong></span>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="siteNav">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="site-nav" id="siteNav">
+      <a href="#inicio">Inicio</a>
+      <a href="#servicos">Servicos</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#antesDepois">Antes/Depois</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+      <a class="nav-cta" href="https://wa.me/5511990134546?text=Ola!%20Gostaria%20de%20agendar%20um%20horario." target="_blank" rel="noopener">Agendar</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-media" aria-hidden="true"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow">Beleza, cuidado e autoestima</p>
+        <h1>Studio Bem Bonita</h1>
+        <p class="hero-text">Cabelo, unhas, sobrancelhas e estetica em um ambiente pensado para voce se sentir bem do inicio ao fim.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#contato">Agendar horario</a>
+          <a class="btn secondary" href="#galeria">Ver galeria</a>
+        </div>
+      </div>
+    <!--- <div class="scroll-hint">role para conhecer</div> -->
+    </section>
+
+    <section class="servicos section" id="servicos">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Nosso servico</p>
+        <h2>Cada detalhe aparece no seu tempo.</h2>
+        <p>Toque em um servico para abrir a galeria correspondente.</p>
+      </div>
+
+      <div class="timeline" id="servicesTimeline">
+        <div class="linha-central" aria-hidden="true">
+          <div class="linha-progresso" id="timelineProgress"></div>
+        </div>
+
+        <article class="service-item esquerda reveal-step">
+          <a class="service-card" href="#galeria" data-gallery="maoPe">
+            <span class="service-number">01</span>
+            <h3>Mao e Pe</h3>
+            <p>Acabamento delicado, esmaltes bem escolhidos e cuidado completo para maos e pes.</p>
+          </a>
+        </article>
+
+        <article class="service-item direita reveal-step">
+          <a class="service-card" href="#galeria" data-gallery="sobrancelha">
+            <span class="service-number">02</span>
+            <h3>Micropigmentacao e Sobrancelhas</h3>
+            <p>Designer, alinhamento e realce do olhar com naturalidade.</p>
+          </a>
+        </article>
+
+        <article class="service-item esquerda reveal-step">
+          <a class="service-card" href="#galeria" data-gallery="cabelo">
+            <span class="service-number">03</span>
+            <h3>Cabelo</h3>
+            <p>Cortes, tratamentos e finalizacoes para valorizar sua beleza.</p>
+          </a>
+        </article>
+
+        <article class="service-item direita reveal-step">
+          <a class="service-card" href="#galeria" data-gallery="depilacao">
+            <span class="service-number">04</span>
+            <h3>Depilacao na Cera</h3>
+            <p>Atendimento cuidadoso, pratico e pensado para conforto.</p>
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <section class="galeria section" id="galeria">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Galeria</p>
+        <h2>Trabalhos e inspiracoes</h2>
+      </div>
+
+      <div class="tabs reveal" role="tablist" aria-label="Categorias da galeria">
+        <button class="tab active" type="button" data-gallery="maoPe">Mao e Pe</button>
+        <button class="tab" type="button" data-gallery="sobrancelha">Sobrancelhas</button>
+        <button class="tab" type="button" data-gallery="cabelo">Cabelo</button>
+        <!-- <button class="tab" type="button" data-gallery="depilacao">Depilacao</button> -->
+      </div>
+
+      <div class="galeria-content active" id="maoPe">
+        <div class="grid">
+          <img src="img/mao1.png" alt="Inspiracao de mao e pe">
+          <img src="img/mao2.png" alt="Inspiracao de mao e pe">
+          <img src="img/mao3.png" alt="Inspiracao de mao e pe">
+          <img src="img/mao4.png" alt="Inspiracao de mao e pe">
+          <img src="img/mao5.png" alt="Inspiracao de mao e pe">
+          <img src="img/mao6.png" alt="Inspiracao de mao e pe">
+        </div>
+      </div>
+
+      <div class="galeria-content" id="sobrancelha">
+        <div class="grid">
+          <img src="img/somb1.png" alt="Inspiracao de sobrancelhas">
+          <img src="img/somb2.png" alt="Inspiracao de sobrancelhas">
+          <img src="img/somb3.png" alt="Inspiracao de sobrancelhas">
+        </div>
+      </div>
+
+      <div class="galeria-content" id="cabelo">
+        <div class="grid">
+          <img src="img/cab1.png" alt="Inspiracao de cabelo">
+          <img src="img/cab2.png" alt="Inspiracao de cabelo">
+          <img src="img/cab3.png" alt="Inspiracao de cabelo">
+        </div>
+      </div>
+
+      <!-- <div class="galeria-content" id="depilacao">
+        <div class="grid">
+          <img src="https://picsum.photos/500/520?16" alt="Inspiracao de depilacao">
+          <img src="https://picsum.photos/500/520?17" alt="Inspiracao de depilacao">
+          <img src="https://picsum.photos/500/520?18" alt="Inspiracao de depilacao">
+        </div>
+      </div> -->
+    </section>
+
+    <section class="antes-depois section" id="antesDepois">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Antes e depois</p>
+        <h2>Compare cada transformacão</h2>
+        <p>Escolha uma categoria e arraste a barra para ver o resultado.</p>
+      </div>
+
+      <div class="ba-tabs reveal" aria-label="Categorias de antes e depois">
+        <!-- Fotos de MAO-->
+        <button class="ba-tab active" type="button" data-before="img/antes1.png" data-after="img/depois1.png" data-title="Mao">
+          Mao
+        </button>
+
+        <!-- Fotos de PE: troque os caminhos em data-before e data-after pelas imagens reais. -->
+        <button class="ba-tab" type="button" data-before="img/antes2.png" data-after="img/depois2.png" data-title="Pe">
+          Pe
+        </button>
+
+        <!-- Fotos de SOBRANCELHAS: troque os caminhos em data-before e data-after pelas imagens reais. -->
+        <button class="ba-tab" type="button" data-before="img/antes3.png" data-after="img/depois3.png" data-title="Sobrancelhas">
+          Sobrancelhas
+        </button>
+
+        <!-- Fotos de CABELO: troque os caminhos em data-before e data-after pelas imagens reais. -->
+        <button class="ba-tab" type="button" data-before="img/antes4.png" data-after="img/depois4.png" data-title="Cabelo">
+          Cabelo
+        </button>
+      </div>
+
+      <div class="ba-wrap reveal">
+        <div class="ba" id="ba">
+          <!-- FOTO DEPOIS INICIAL: coloque aqui a imagem de depois da categoria inicial. -->
+          <img class="ba-img ba-after" id="baAfterImg" src="img/depois1.png" alt="Depois - Mao">
+
+          <div class="ba-before-wrap" id="baBefore">
+            <!-- FOTO ANTES INICIAL: coloque aqui a imagem de antes da categoria inicial. -->
+            <img class="ba-img" id="baBeforeImg" src="img/antes1.png" alt="Antes - Mao">
+          </div>
+
+          <div class="ba-handle" id="baHandle" aria-hidden="true">
+            <span>&lsaquo; &rsaquo;</span>
+          </div>
+
+          <span class="ba-label ba-label-l">ANTES</span>
+          <span class="ba-label ba-label-r">DEPOIS</span>
+          <span class="ba-current" id="baCurrent">Mao</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="sobre section" id="sobre">
+      <div class="sobre-imagem reveal">
+        <div class="album">
+          <img src="img/logo.jpg" alt="Logo Studio Bem Bonita">
+          <span class="pin"></span>
+          <img class="mini" src="img/miniestudio1.jpg" alt="Detalhe do studio">
+        </div>
+      </div>
+
+      <div class="sobre-texto reveal">
+        <p class="eyebrow">Sobre nos</p>
+        <h2>Um studio feito para voce se sentir bonita.</h2>
+        <p>O Studio Bem Bonita foi criado para trazer autoestima, elegancia e conforto para cada cliente.</p>
+        <p>Nosso ambiente foi pensado para oferecer uma experiencia acolhedora, moderna e sofisticada.</p>
+        <p>Trabalhamos com dedicacao em cada detalhe para valorizar ainda mais sua beleza natural.</p>
+      </div>
+    </section>
+
+    <section class="contato section" id="contato">
+      <div class="mapa reveal">
+        <iframe
+          title="Localizacao Studio Bem Bonita"
+          src="https://www.google.com/maps?q=Rua+Fernando+Pessoa+257,+Sao+Paulo,+Brazil+02670-000&output=embed"
+          width="100%"
+          height="100%"
+          style="border:0;"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+
+      <div class="formulario reveal">
+        <p class="eyebrow">Contato</p>
+        <h2>Agende seu horario</h2>
+
+        <form id="contactForm">
+          <input type="text" id="nome" placeholder="Seu nome" required>
+          <textarea id="mensagem" placeholder="Sua mensagem" required></textarea>
+          <button type="submit">Enviar pelo WhatsApp</button>
+        </form>
+
+        <div class="social-links">
+          <a class="social-link instagram" href="https://www.instagram.com/studio.bem.bonita?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener">
+            <i class="fa-brands fa-instagram"></i>
+            <span>@studio.bem.bonita</span>
+          </a>
+
+          <a class="social-link whatsapp" href="https://wa.me/5511990134546?text=Ola!%20Gostaria%20de%20agendar%20um%20horario." target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>+55 11 99013-4546</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal" id="imageModal" aria-hidden="true">
+    <button class="modal-close" type="button" id="modalClose" aria-label="Fechar imagem">&times;</button>
+    <img src="" alt="" id="modalImage">
+  </div>
+
+  <footer>
+    <p>2026 Studio Bem Bonita. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
